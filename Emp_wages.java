@@ -62,6 +62,33 @@ public class Emp_wages {
             	Totalwage += 0;
             }
         }
-        	System.out.println("Employee Monthly Wager" + Totalwage);
-        }
+        System.out.println("Employee Monthly Wager" + Totalwage);
+ 		int TotalWage = 0, d = 0, Workinghour = 0;
+ 		while( d <= 20 || Workinghour <= 100 )
+ 		{
+ 			switch (cases) {
+ 			case 1:
+ 				d++;
+ 				Workinghour += 8;
+ 				TotalWage +=  Daily_wage;
+ 				break;
+ 			case 2:
+ 				d++;
+ 				Workinghour += 4;
+ 				TotalWage += Parttimewage + Daily_wage;
+ 				break;
+
+ 			default:
+ 				d++;
+    				Workinghour += 0;
+                                TotalWage += 0;
+ 			}
+ 		}
+
+ 		System.out.println(" Employee Monthly wager = "+TotalWage);
+
+	}
         	}
+
+}
+
