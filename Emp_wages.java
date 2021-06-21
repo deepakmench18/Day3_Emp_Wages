@@ -47,7 +47,21 @@ public class Emp_wages {
         default:
         	System.out.println("Employee is Absent");
         }
-	}
-
-}
-
+        int Totalwage = 0;
+        for(int d = 1; d <=20; d++)
+        {
+        	switch (cases)
+            {
+            case 1:
+            	Totalwage = Totalwage + Daily_wage;
+            	break;
+            case 2:
+            	Totalwage = Totalwage + Parttimewage + Daily_wage;
+            	break;
+            default:
+            	Totalwage += 0;
+            }
+        }
+        	System.out.println("Employee Monthly Wager" + Totalwage);
+        }
+        	}
