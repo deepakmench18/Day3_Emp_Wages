@@ -22,17 +22,30 @@ public class Emp_wages {
         	System.out.println("Employee Daily Wager" + isAbsent);
         }
         int Parttimewage = WagePerHr * ParttimeHr;
-        if (empCheck == isPresent)
+        double Check = Math.floor(Math.random() * 10) % 3;
+        if (Check == isPresent)
         {
         	System.out.println("Employee Full Day Wage " + Daily_wage);
         }
-        else if(empCheck == isParttime)
+        else if(Check == isParttime)
         {
         	System.out.println("Employee Part time wage" + Parttimewage);
         }
         else
         {
         	System.out.println("Employee Daily Wages " + isAbsent);
+        }
+        int cases = (int)Check;
+        switch (cases)
+        {
+        case 1:
+        	System.out.println("Employee Full Day Wage" + Daily_wage);
+        	break;
+        case 2:
+        	System.out.println("Employee Part time wages" + Parttimewage);
+        	break;
+        default:
+        	System.out.println("Employee is Absent");
         }
 	}
 
